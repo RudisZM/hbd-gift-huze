@@ -80,7 +80,7 @@
       }
 
       .anim-section {
-        min-height: 150vh;
+        min-height: 120vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -96,7 +96,7 @@
       .img-left,
       .img-right {
         position: fixed; /* tetap di tengah layar vertikal */
-        top: 30%;
+        top: 20%;
         transform: translateY(-50%);
         width: 40vmin;
         max-width: 420px;
@@ -113,12 +113,14 @@
       }
 
       .after {
-        height: 100vh;
-        background-image: url("tulisan.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        background-color: #fff;
+        height: 100svh;
+        width: 100svw;
+        overflow: hidden;
+      }
+
+      .after img {
+        width: 100svw;
+        margin-top: 30%;
       }
 
       @media (max-width: 1024px) {
@@ -174,9 +176,11 @@
       </div>
     </section>
 
-    <section class="after"></section>
+    <section class="after">
+      <img src="tulisan.png" alt="Tulisan" />
+    </section>
     <!-- Tambahkan elemen audio di dalam body -->
-    <audio id="bgMusic" preload="auto" loop>
+    <audio id="bgMusic" preload="auto">
       <source src="bg-musik.mp3" type="audio/mpeg" />
       Browser Anda tidak mendukung elemen audio.
     </audio>
@@ -256,7 +260,3 @@
     </script>
   </body>
 </html>
-
-
-
-
