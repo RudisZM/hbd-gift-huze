@@ -39,24 +39,24 @@
       .hero p {
         opacity: 0.8;
       }
-.scroll-hint {
-  position: fixed;
-  top: 50%;              /* Pusat vertikal */
-  left: 50%;             /* Pusat horizontal */
-  transform: translate(-50%, -50%); /* Geser ke tengah sempurna */
-  background: rgba(17, 24, 39, 0.95);
-  color: #fff;
-  padding: 10px 16px;
-  border-radius: 999px;
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.12);
-  z-index: 999;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.4s ease;
-}
+      .scroll-hint {
+        position: fixed;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 28px;
+        background: rgba(17, 24, 39, 0.95);
+        color: #fff;
+        padding: 10px 16px;
+        border-radius: 999px;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        box-shadow: 0 6px 20px rgba(2, 6, 23, 0.12);
+        z-index: 999;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.4s ease;
+      }
       .scroll-hint.show {
         opacity: 1;
         pointer-events: auto;
@@ -79,7 +79,7 @@
       }
 
       .anim-section {
-        min-height: 120vh;
+        min-height: 150vh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -95,7 +95,7 @@
       .img-left,
       .img-right {
         position: fixed; /* tetap di tengah layar vertikal */
-        top: 20%;
+        top: 30%;
         transform: translateY(-50%);
         width: 40vmin;
         max-width: 420px;
@@ -260,5 +260,3 @@
     </script>
   </body>
 </html>
-
-
